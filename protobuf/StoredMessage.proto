@@ -1,0 +1,14 @@
+package opennetwork;
+
+option java_package = "com.opennetwork.secureim.server.storage";
+option java_outer_classname = "StoredMessageProtos";
+
+message StoredMessage {
+  enum Type {
+    UNKNOWN = 0;
+    MESSAGE = 1;
+  }
+
+  optional Type  type    = 1;
+  optional bytes content = 2;
+}

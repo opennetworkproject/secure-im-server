@@ -1,0 +1,18 @@
+package opennetwork;
+
+option java_package = "com.opennetwork.secureim.server.storage";
+option java_outer_classname = "PubSubProtos";
+
+message PubSubMessage {
+  enum Type {
+    UNKNOWN   = 0;
+    QUERY_DB  = 1;
+    DELIVER   = 2;
+    KEEPALIVE = 3;
+    CLOSE     = 4;
+    CONNECTED = 5;
+  }
+
+  optional Type  type    = 1;
+  optional bytes content = 2;
+}
