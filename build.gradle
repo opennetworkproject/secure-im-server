@@ -26,6 +26,7 @@ dependencies {
     compile group: 'org.postgresql', name: 'postgresql', version:'9.4-1201-jdbc41'
     compile group: 'com.relayrides', name: 'pushy', version:'0.9.3'
     compile group: 'com.relayrides', name: 'pushy-dropwizard-metrics-listener', version:'0.9.3'
+    compile group: 'org.eclipse.jetty.websocket', name: 'websocket-api', version: '9.4.8.v20171121'
     testCompile(group: 'org.glassfish.jersey.test-framework.providers', name: 'jersey-test-framework-provider-grizzly2', version:'2.19') {
         exclude(module: 'javax.servlet-api')
         exclude(module: 'junit')
