@@ -10,7 +10,7 @@ import com.opennetwork.secureim.server.util.Constants;
 import com.opennetwork.secureim.server.util.Util;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import com.opennetwork.secureim.dropwizard.simpleauth.Authenticator;
+import com.opennetwork.secureim.auth.Authenticator;
 import com.opennetwork.secureim.server.storage.Device;
 
 import static com.codahale.metrics.MetricRegistry.name;
